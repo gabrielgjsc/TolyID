@@ -4,7 +4,12 @@
 body{
     margin: 0px;
     font-family: 'Circular Std', sans-serif;
-    background-color: #00081d;
+    background-image: linear-gradient(333.52deg, #50301E 24.58%, white 84.55%, #50301E 104.96%);
+}
+
+#logo_initial{
+    width: 100px;
+
 }
 
 #logo{
@@ -12,9 +17,16 @@ body{
 }
 
 #container{
-    background-image: linear-gradient(103.24deg, rgba(0, 8, 29, 0.9) 23.83%, rgba(0, 8, 29, 0.3) 96.1%), url(https://i.pinimg.com/564x/96/c5/76/96c576ab67f222a1a735494b26dadb94.jpg);
+    background-image: linear-gradient(333.52deg, #50301E 24.58%, white 84.55%, #50301E 104.96%);
     background-size: cover;
     height: 700px;
+    padding: 40px;
+}
+
+#container2{
+    background-image: linear-gradient(333.52deg, #50301E 24.58%, white 84.55%, #50301E 104.96%);
+    background-size: cover;
+    height: 1000px;
     padding: 40px;
 }
 
@@ -38,12 +50,12 @@ select{
     background-color: #e50914;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 14px;
 }
 
 #main{
-    color: white;
+    color: black;
     margin-top: 100px;
     margin-left: 100px;
 }
@@ -61,13 +73,32 @@ h3{
 form{
     display: flex;
     flex-direction: row;
+
+}
+
+form2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 60px;
+
 }
 
 #input{
     height: 50px;
     width: 350px;
     background-color: rgb(255, 255, 255);
-    border: 1px solid whitesmoke;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 0px 10px;
+}
+
+#input2{
+    height: 50px;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
     font-size: 16px;
     padding: 0px 10px;
@@ -78,8 +109,8 @@ form{
     font-size: 22px;
     padding: 2px 20px;
     font-weight: 500;
-    color: black;
-    background-color: white;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
     border: none;
     border-radius: 5px;
 }
@@ -89,7 +120,15 @@ form{
     height: 600px;
     margin: 0 auto;
     margin-top: 100px;    
-    background: linear-gradient(333.52deg, #50301E 24.58%, white 84.55%, #50301E 104.96%);;
+    background: linear-gradient(333.52deg, #50301E 24.58%, white 84.55%, #50301E 104.96%);
+    border-radius: 5px;
+}
+#box-container2{
+    width: 30%;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 100px;    
+    background: linear-gradient(333.52deg, #50301E 24.58%, white 84.55%, #50301E 104.96%);
     border-radius: 5px;
 }
 
@@ -118,3 +157,4 @@ form{
     background-color: rgba(0, 0, 0, 0.467);
     margin: 0 auto;
 }
+
