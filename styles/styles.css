@@ -157,4 +157,6 @@ form2{
     background-color: rgba(0, 0, 0, 0.467);
     margin: 0 auto;
 }
-
+#tablet {
+    width: 510px;
+}
