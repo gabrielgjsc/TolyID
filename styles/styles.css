@@ -8,12 +8,13 @@ body{
 }
 
 #logo_initial{
-    width: 100px;
-
+    width: 120px;
+/* Logo da página de login */
 }
 
 #logo{
     width: 35px;
+    /* Logo fo cabeçalho */
 }
 
 #container{
@@ -21,13 +22,15 @@ body{
     background-size: cover;
     height: 700px;
     padding: 40px;
+    /* Fundo da página index */
 }
 
-#container2{
+#containerlogin{
     background-image: linear-gradient(333.52deg, #50301E 24.58%, white 84.55%, #50301E 104.96%);
     background-size: cover;
     height: 1000px;
     padding: 40px;
+    /*Fundo da página login*/
 }
 
 #header{
@@ -35,52 +38,52 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
-
-select{
-    padding: 4px 15px;
-    font-size: 16px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.712);
-    margin-right: 10px;
+    /*Cabeçalho*/
 }
 
 #btn-enter{
     padding: 7px 15px;
-    background-color: #e50914;
+    background-color: #50301E;
     border: none;
     border-radius: 5px;
     color: rgb(255, 255, 255);
     font-size: 14px;
+    cursor: pointer;
+    /*Botão do cabeçalho marrom e branco*/
 }
 
 #main{
     color: black;
     margin-top: 100px;
     margin-left: 100px;
+    /*Estilo letras após cabeçalho página index*/
 }
 
 #title-main{
     font-size: 62px;
     font-weight: 900;
+    /*Estilo letras após cabeçalho página index*/
 }
 
 h3{
     font-weight: 400;
     margin-top: 40px;
+    /*Estilo letras após cabeçalho página index*/
 }
 
 form{
     display: flex;
     flex-direction: row;
-
+    /*Estilo input após cabeçalho página index*/
 }
 
-form2{
+formlogin{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px 60px;
+    gap: 35px;
+    /*Estilo input página login*/
 
 }
 
@@ -92,9 +95,10 @@ form2{
     border-radius: 5px;
     font-size: 16px;
     padding: 0px 10px;
+    /*Estilo input página index*/
 }
 
-#input2{
+#inputsenha{
     height: 50px;
     width: 350px;
     background-color: rgb(255, 255, 255);
@@ -102,6 +106,7 @@ form2{
     border-radius: 5px;
     font-size: 16px;
     padding: 0px 10px;
+    /*Estilo input página login para o JavaScript*/
 }
 
 #btn-start{
@@ -110,26 +115,40 @@ form2{
     padding: 2px 20px;
     font-weight: 500;
     color: rgb(255, 255, 255);
-    background-color: rgb(255, 0, 0);
+    background-color: #50301E;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+/*Botão marrom e branco de entrar*/
 }
 
 #box-container{
     width: 100%;
-    height: 600px;
+    height: 500px;
     margin: 0 auto;
     margin-top: 100px;    
     background: linear-gradient(333.52deg, #50301E 24.58%, white 84.55%, #50301E 104.96%);
     border-radius: 5px;
+    /*Estilo box-container da página index*/
 }
-#box-container2{
+#box-containerlogin{
     width: 30%;
     height: 600px;
     margin: 0 auto;
     margin-top: 100px;    
-    background: linear-gradient(333.52deg, #50301E 24.58%, white 84.55%, #50301E 104.96%);
+    background-color: white;
     border-radius: 5px;
+    /*Estilo box-container da página login*/
+}
+
+#box-containerinscrever{
+    width: 80%;
+    height: 800px;
+    margin: 0 auto;
+    margin-top: 100px;    
+    background-color: white;
+    border-radius: 5px;
+    /*Estilo box-container da página inscrever*/
 }
 
 .box-info{
@@ -139,16 +158,20 @@ form2{
     align-items: center;
     padding: 40px;
     justify-content: center;
+    /*Estilo box-container da página index e login*/
 }
 
 .box-title{
     font-size: 48px;
     font-weight: 800;
     margin-right: 100px;
+    /*Estilo letras do container da página index*/
+
 }
 
 .subtitle-main{
     font-size: 20px;
+    /*Estilo letras do container da página index*/
 }
 
 .shadow{
@@ -156,7 +179,23 @@ form2{
     height: 7px;
     background-color: rgba(0, 0, 0, 0.467);
     margin: 0 auto;
+    /*Linha da página index*/
 }
 #tablet {
     width: 510px;
+    /*Tamanho da imagem da página index*/
+}
+#eye{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    /*Olho da página login*/
+}
+div i{
+    position: absolute;
+    right: 5%;
+    top: 23%;
+    cursor: pointer;
+    font-size: 25px;
+    /*Estilo olho da página login*/
 }

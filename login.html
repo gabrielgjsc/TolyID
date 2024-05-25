@@ -4,26 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="./styles/styles.css" rel="stylesheet" />
     <title>TolyID</title>
 </head>
 <body>
-    <div id="container2">
+    <div id="containerlogin">
         <div id="header">
             <img src="./assets/imgs/logo.png" id="logo" />
         </div>
         <div id="main">
         </div>
-        <div id="box-container2">
+        <div id="box-containerlogin">
             <div class="box-info">
                 <div class="box-text">
-                    <form2>
+                    <formlogin>
                         <img src="./assets/imgs/logo.png" id="logo_initial" />
-                        <input type="email" placeholder="Email" id="input2" />
-                        <input type="password" placeholder="Senha" id="input2" />
+                        <input type="email" placeholder="Email" maxlength="80" id="input" />
+                        <div id="eye">
+                        <input type="password" placeholder="Senha" maxlength="40" id="inputsenha" />
+                        <i class="bi bi-eye" id="btn-senha" onclick="mostraSenha()"></i>
+                        </div>
                         <button type="button" onclick="location.href='file:/C:/Users/Usuario/Downloads/TolyID/system.html'" id="btn-start" >Entrar</button>
-                    </form2>
+                    </formlogin>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
