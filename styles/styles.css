@@ -88,6 +88,7 @@ formlogin{
 }
 
 #input{
+    display: block;
     height: 50px;
     width: 350px;
     background-color: rgb(255, 255, 255);
@@ -111,6 +112,7 @@ formlogin{
 }
 
 #inputsenha{
+    display: block;
     height: 50px;
     width: 350px;
     background-color: rgb(255, 255, 255);
@@ -242,7 +244,7 @@ formlogin{
 div i{
     position: absolute;
     right: 5%;
-    top: 23%;
+    top: 40%;
     cursor: pointer;
     font-size: 25px;
     /*Estilo olho da página login*/
