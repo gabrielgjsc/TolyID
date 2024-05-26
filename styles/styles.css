@@ -98,6 +98,18 @@ formlogin{
     /*Estilo input página index*/
 }
 
+#inputdata{
+    display: block;
+    height: 45px;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 0px 10px;
+    /*Estilo input página inscrever*/
+}
+
 #inputsenha{
     height: 50px;
     width: 350px;
@@ -142,7 +154,7 @@ formlogin{
 }
 
 #box-containerinscrever{
-    width: 80%;
+    width: 50%;
     height: 800px;
     margin: 0 auto;
     margin-top: 100px;    
@@ -161,11 +173,47 @@ formlogin{
     /*Estilo box-container da página index e login*/
 }
 
+.box-infoinsc{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+    padding: 40px;
+    justify-content: center;
+    /*Estilo box-container da página inscrever*/
+}
+
+.datacad{
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: row;
+    color: black;
+    align-items: left;
+    padding: 40px;
+    gap: 10px;
+    /*Estilo box-container da página inscrever*/
+}
+
+.box-textinsc{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    /*Estilo box-container da página inscrever*/
+}
+
 .box-title{
     font-size: 48px;
     font-weight: 800;
     margin-right: 100px;
     /*Estilo letras do container da página index*/
+
+}
+.box-titleinsc{
+    font-size: 40px;
+    font-weight: 700;
+    /*Estilo letras do container da página insc*/
 
 }
 
@@ -198,4 +246,8 @@ div i{
     cursor: pointer;
     font-size: 25px;
     /*Estilo olho da página login*/
+}
+label {
+    font-weight: bold;
+    font-size: 12px;
 }
