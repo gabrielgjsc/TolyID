@@ -9,14 +9,11 @@
     <title>TolyID</title>
 </head>
 <body>
-    <div id="containerlogin">
-        <div id="header">
-            <img src="./assets/imgs/logo.png" id="logo" />
-        </div>
+    <div id="containerinsc">
         <div id="box-containerinscrever">
             <div class="box-infoinsc">
                 <div class="box-textinsc">
-                    <h1 class="box-titleinsc">Cadastro</h1>
+                    <h1 class="box-titleinsc">Realize o cadastro para ter acesso ao sistema</h1>
                 </div>
                 <div class="datacad">
                     <label> E-mail:
@@ -26,7 +23,7 @@
                         <label> Senha:
                         <input type="password" placeholder="Senha" maxlength="40" id="inputsenhainsc" />
                     </label>
-                        <d class="bi bi-eye" id="btn-senhainsc" onclick="mostraSenhainsc()"></d>
+                        <eyeinsc class="bi bi-eye" id="btn-senhainsc" onclick="mostraSenhainsc()"></eyeinsc>
                         </div>
                 </div>
                 <div class="datacad">
@@ -62,9 +59,12 @@
             </label>
             <label> Telefone ou Celular:
                     <input id="inputdata" type="text" onblur="mascaraDeTelefone(this)" 
-                           placeholder="Ex: (00)99999-9999 ou (00)9999-9999" 
+                           placeholder="(00)99999-9999 ou (00)9999-9999" 
                            onfocus="tiraHifen(this)" />
               </label>
+                </div>
+                <div>
+                    <button type="button" onclick="location.href='file:/C:/Users/Usuario/Downloads/TolyID/system.html'" id="btn-start" >Feito</button>
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@
 body{
     margin: 0px;
     font-family: 'Circular Std', sans-serif;
-    background-image: linear-gradient(333.52deg, #50301E 24.58%, white 84.55%, #50301E 104.96%);
+    background-image: linear-gradient(333.52deg, #643b24 24.58%, white 84.55%, #643b24 104.96%);
 }
 
 #logo_initial{
@@ -14,11 +14,11 @@ body{
 
 #logo{
     width: 35px;
-    /* Logo fo cabeçalho */
+    /* Logo do cabeçalho */
 }
 
 #container{
-    background-image: linear-gradient(333.52deg, #50301E 24.58%, white 84.55%, #50301E 104.96%);
+    background-image: linear-gradient(333.52deg, #643b24 24.58%, white 84.55%, #643b24 104.96%);
     background-size: cover;
     height: 700px;
     padding: 40px;
@@ -26,9 +26,17 @@ body{
 }
 
 #containerlogin{
-    background-image: linear-gradient(333.52deg, #50301E 24.58%, white 84.55%, #50301E 104.96%);
+    background-image: linear-gradient(333.52deg, #643b24 24.58%, white 84.55%, #643b24 104.96%);
     background-size: cover;
-    height: 1000px;
+    height: 859px;
+    padding: 40px;
+    /*Fundo da página login*/
+}
+
+#containerinsc{
+    background-image: linear-gradient(333.52deg, #643b24 24.58%, white 84.55%, #643b24 104.96%);
+    background-size: cover;
+    height: 859px;
     padding: 40px;
     /*Fundo da página login*/
 }
@@ -39,6 +47,16 @@ body{
     align-items: center;
     justify-content: space-between;
     /*Cabeçalho*/
+}
+#teste{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    top: 20%;
 }
 
 #btn-enter{
@@ -152,7 +170,7 @@ formlogin{
     height: 500px;
     margin: 0 auto;
     margin-top: 100px;    
-    background: linear-gradient(333.52deg, #50301E 24.58%, white 84.55%, #50301E 104.96%);
+    background: linear-gradient(333.52deg, #643b24 24.58%, white 84.55%, #643b24 104.96%);
     border-radius: 5px;
     /*Estilo box-container da página index*/
 }
@@ -160,18 +178,18 @@ formlogin{
     width: 30%;
     height: 600px;
     margin: 0 auto;
-    margin-top: 100px;    
-    background-color: white;
+    margin-top: 120px;    
+    background: linear-gradient(400deg, #643b24 24.58%, white 84.55%, #643b24 104.96%);
     border-radius: 5px;
     /*Estilo box-container da página login*/
 }
 
 #box-containerinscrever{
     width: 50%;
-    height: 800px;
+    height: 720px;
     margin: 0 auto;
-    margin-top: 100px;    
-    background-color: white;
+    margin-top: 60px;    
+    background: linear-gradient(400deg, #643b24 24.58%, white 84.55%, #643b24 104.96%);
     border-radius: 5px;
     /*Estilo box-container da página inscrever*/
 }
@@ -224,8 +242,8 @@ formlogin{
 
 }
 .box-titleinsc{
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 500;
     /*Estilo letras do container da página insc*/
 
 }
@@ -252,7 +270,7 @@ formlogin{
     position: relative;
     /*Olho da página login*/
 }
-div i{
+div eyelogin{
     position: absolute;
     right: 5%;
     top: 40%;
@@ -260,7 +278,7 @@ div i{
     font-size: 25px;
     /*Estilo olho da página login*/
 }
-div d{
+div eyeinsc{
     position: absolute;
     right: 5%;
     top: 38%;
@@ -273,3 +291,65 @@ label {
     font-weight: bold;
     font-size: 12px;
 }
+
+#system{
+    height: 100vh;
+    background-image: linear-gradient(333.52deg, #643b24 24.58%, white 84.55%, #643b24 104.96%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav.menu-lateral{
+    width: 300px;
+    height: 100%;
+    background-color: #643b24;
+    padding: 40px 0 40px 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*Estilo menu-lateral*/
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 47px;
+}
+
+.btn-expandir > i{
+   color: #000000;
+   font-size: 24px;
+   cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: 1s;
+}
+
+ul li.item-menu:hover{
+    background: white;
+}
+
+ul li.item-menu a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 40px;
+}
+
+ul li.item-menu a icon > i{
+    font-size: 30px;
+}
+
