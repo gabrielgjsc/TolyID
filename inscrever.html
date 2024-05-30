@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="./styles/styles.css" rel="stylesheet" />
     <title>TolyID</title>
 </head>
@@ -16,6 +17,17 @@
             <div class="box-infoinsc">
                 <div class="box-textinsc">
                     <h1 class="box-titleinsc">Cadastro</h1>
+                </div>
+                <div class="datacad">
+                    <label> E-mail:
+                        <input type="email" placeholder="E-mail" maxlength="80" id="inputdata" />
+                    </label>
+                    <div id="eye">
+                        <label> Senha:
+                        <input type="password" placeholder="Senha" maxlength="40" id="inputsenhainsc" />
+                    </label>
+                        <d class="bi bi-eye" id="btn-senhainsc" onclick="mostraSenhainsc()"></d>
+                        </div>
                 </div>
                 <div class="datacad">
                     <label> Nome completo:
@@ -31,9 +43,32 @@
                 </label>
                     <label> Endereço:
                     <input type="text" placeholder="Endereço" id="inputdata">
+                </label>
+            <label> Número:
+            <input type="number" placeholder="Número" id="inputdata">
+        </label>
                 </div>
+                <div class="datacad">
+                    <label> Bairro:
+                    <input type="text" placeholder="Bairro" id="inputdata">
+                </label>
+                    <label> Estado:
+                    <input type="text" placeholder="Estado" id="inputdata">
+                </label>
+            </div>
+            <div class="datacad">
+                <label> Contato:
+                <input type="text" placeholder="Contato" id="inputdata">
+            </label>
+            <label> Telefone ou Celular:
+                    <input id="inputdata" type="text" onblur="mascaraDeTelefone(this)" 
+                           placeholder="Ex: (00)99999-9999 ou (00)9999-9999" 
+                           onfocus="tiraHifen(this)" />
+              </label>
                 </div>
-                </div>
+            </div>
+        </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
