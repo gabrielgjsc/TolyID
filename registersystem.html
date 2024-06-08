@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="./styles/styles_system.css" rel="stylesheet" />
+    <title>TolyID</title>
+</head>
+<body class="register">
+    <div>
+<div>
+    <div id="header">
+        <img src="./assets/imgs/logo.png" id="logo" />
+        <ul>
+            <li class="item-cabecalho">
+                <a href="./account.html">
+                    <span class="icon-cabecalho"><i class="bi bi-person-circle"></i></span>
+                </a>
+            </li>
+                <li class="item-cabecalho">
+                    <a href="./config.html">
+                        <span class="icon-cabecalho"><i class="bi bi-gear"></i></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <nav class="menu-lateral">
+        <div class="btn-expandir">
+            <i class="bi bi-list" id="btn-expandir"></i>
+            </div>
+        <ul>
+            <li class="item-menu ativo">
+                <a href="./home.html">
+                    <span class="icon"><i class="bi bi-house-door-fill"></i></span>
+                    <span class="txt-link">Home</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="./account.html">
+                    <span class="icon"><i class="bi bi-person-circle"></i></span>
+                    <span class="txt-link">Conta</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="./config.html">
+                    <span class="icon"><i class="bi bi-gear"></i></span>
+                    <span class="txt-link">Configurações</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="./registersystem.html">
+                    <span class="icon"><i class="bi bi-card-checklist"></i></span>
+                    <span class="txt-link">Cadastro</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="./report.html">
+                    <span class="icon"><i class="bi bi-printer"></i></span>
+                    <span class="txt-link">Relatório</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="./map.html">
+                    <span class="icon"><i class="bi bi-globe-americas"></i></span>
+                    <span class="txt-link">Localização</span>
+                </a>
+            </li>
+        </ul>
+</nav>
+    <div id="#box-containerprincipalsystem">
+        <div class="box-system">
+            <div class="box-textinsc">
+                <h1 class="box-titleinsc">Ficha de campo ECP - Tatu-Bola</h1>
+            </div>
+            <div class="datacad">
+                <label> Identificação do Animal:
+                <input type="text" placeholder="Identificação do Animal" id="inputdata">
+            </label>
+            <label> Peso:
+                <input type="number" placeholder="Peso em Kg" id="inputdata">
+            </label>
+        </div>
+            <div class="datacad">
+            <label> Número de Identificação:
+                <input type="number" placeholder="Número de Identificação" id="inputdata">
+            </label>
+            <label> Número do Microchip:
+                <input type="number" placeholder="Número do Microchip" id="inputdata">
+            </label>
+        </div>
+            <div class="datacad">
+                <label> Local de Captura:
+                <input type="text" placeholder="Local da Captura" maxlength="50" id="inputdata">
+            </label>
+            <label> Data da Captura:
+                <input type="date" placeholder="Data da Captura" id="inputdata">
+            </label>
+            <label> Hora da Captura:
+                <input type="time" id="inputdata">
+            </label>
+        </div>
+            <div class="datacad">
+                <label> Equipe Responsável:
+                <input type="number" placeholder="Equipe Responsável" id="inputdata">
+            </label>
+            <label> Instituição:
+                <input type="text" placeholder="Instituição" id="inputdata">
+            </label>
+            <label> Contato do Responsável:
+                <input id="inputdata" type="text" onblur="mascaraDeTelefone(this)" 
+                       placeholder="(00)99999-9999 ou (00)9999-9999" 
+                       onfocus="tiraHifen(this)" />
+          </label>
+          </div>
+          <div class="datacad">
+            <label> Observações:
+                <textarea id="inputdata" placeholder="Observações"></textarea>
+          </div>
+          <div class="box-textinsc">
+            <h1 class="box-titleinsc">Ficha Anestésica</h1>
+        </div>
+        <div class="datacad">
+            <label> Tipo de Anestésico/Dose:
+            <input type="text" placeholder="Tipo de Anestésico/Dose" id="inputdata">
+        </label>
+        <label> Via de Administração:
+            <input type="text" placeholder="Via de Administração" id="inputdata">
+        </label> 
+        <label> Tempo de Anestesia:
+        <input type="time" id="inputdata">
+      </label>
+      </div>
+      <div class="datacad">
+        <label> Aplicação:
+            <input type="time" id="inputdata">
+          </label>
+          <label> Indução:
+            <input type="time" id="inputdata">
+          </label>
+          <label> Retorno:
+            <input type="time" id="inputdata">
+          </label>
+      </div>
+      <div class="box-textinsc">
+        <h1 class="box-titleinsc">Amostras</h1>
+        <form>
+            <div class="datacad">
+                <input type="checkbox" id="option1" name="option1" value="1">
+                <label for="option1">Sangue</label>
+                <input type="checkbox" id="option2" name="option2" value="2">
+                <label for="option2">Fezes</label>
+                <input type="checkbox" id="option3" name="option3" value="3">
+                <label for="option3">Pelo</label>     
+                <input type="checkbox" id="option4" name="option4" value="4">
+                <label for="option4">Ectoparasitos</label>
+                <input type="checkbox" id="option5" name="option5" value="5">
+                <label for="option5">Sawb</label>
+            </div>
+        </form>
+    </div>
+    <div class="box-textinsc">
+        <h1 class="box-titleinsc">Biometria</h1>
+        </div>
+        <div class="datacad">
+            <label> Comprimento Total:
+            <input type="text" placeholder="Comprimento Total" id="inputdata">
+        </label>
+            <label> Comprimento Orelha:
+        <input type="text" placeholder="Comprimento da Orelha" id="inputdata">
+    </label>
+        <label> Número de Cintas:
+    <input type="text" placeholder="Número de Cintas" id="inputdata">
+</div>
+<div class="datacad">
+    <label> Comprimento Cabeça:
+        <input type="text" placeholder="Comprimento Cabeça" id="inputdata">
+    </label>
+    <label> Comprimento Cauda:
+        <input type="text" placeholder="Comprimento Cauda" id="inputdata">
+    </label>
+    <label> Comprimento Mão sem Unha:
+        <input type="text" placeholder="Comprimento Mão sem Unha" id="inputdata">
+    </label>
+</div>
+
+<div class="datacad">
+    <label> Largura Cabeça:
+        <input type="text" placeholder="Largura Cabeça" id="inputdata">
+    </label>
+    <label> Largura Cauda:
+        <input type="text" placeholder="Largura Cauda" id="inputdata">
+    </label>
+    <label> Comprimento Unha da Mão:
+        <input type="text" placeholder="Comprimento Unha da Mão" id="inputdata">
+    </label>
+</div>
+
+<div class="datacad">
+    <label> Padrão Escudo Cefálico:
+        <input type="text" placeholder="Padrão Escudo Cefálico" id="inputdata">
+    </label>
+    <label> Comprimento Escudo Escapular:
+        <input type="text" placeholder="Comprimento Escudo Escapular" id="inputdata">
+    </label>
+    <label> Comprimento Pé sem Unha:
+        <input type="text" placeholder="Comprimento Pé sem Unha" id="inputdata">
+    </label>
+</div>
+
+<div class="datacad">
+    <label> Comprimento Escudo Cefálico:
+        <input type="text" placeholder="Comprimento Escudo Cefálico" id="inputdata">
+    </label>
+    <label> Semicircunferência Escudo Escapular:
+        <input type="text" placeholder="Semicircunferência Escudo Escapular" id="inputdata">
+    </label>
+    <label> Comprimento Unha do Pé:
+        <input type="text" placeholder="Comprimento Unha do Pé" id="inputdata">
+    </label>
+</div>
+
+<div class="datacad">
+    <label> Largura Escudo Cefálico:
+        <input type="text" placeholder="Largura Escudo Cefálico" id="inputdata">
+    </label>
+    <label> Comprimento Escudo Pélvico:
+        <input type="text" placeholder="Comprimento Escudo Pélvico" id="inputdata">
+    </label>
+    <label> Comprimento do Pênis:
+        <input type="text" placeholder="Comprimento do Pênis" id="inputdata">
+    </label>
+</div>
+
+<div class="datacad">
+    <label> Largura Inter-Orbital:
+        <input type="text" placeholder="Largura Inter-Orbital" id="inputdata">
+    </label>
+    <label> Semicircunferência Escudo Pélvico:
+        <input type="text" placeholder="Semicircunferência Escudo Pélvico" id="inputdata">
+    </label>
+    <label> Largura Base do Pênis:
+        <input type="text" placeholder="Largura Base do Pênis" id="inputdata">
+    </label>
+</div>
+
+<div class="datacad">
+    <label> Largura Inter-Lacrimal:
+        <input type="text" placeholder="Largura Inter-Lacrimal" id="inputdata">
+    </label>
+    <label> Largura na 2ª Cinta:
+        <input type="text" placeholder="Largura na 2ª Cinta" id="inputdata">
+    </label>
+    <label> Comprimento do Clitórios:
+        <input type="text" placeholder="Comprimento do Clitórios" id="inputdata">
+    </label>
+</div>
+<div class="datacad">
+    <label> Observações:
+        <textarea id="inputdata" placeholder="Observações"></textarea>
+  </div>
+  <button type="submit" id="btn-start" >Cadastrar</button>
+    </div>
+        </div>
+        </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

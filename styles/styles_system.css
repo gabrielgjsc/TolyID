@@ -16,12 +16,11 @@ body{
 }
 
 nav.menu-lateral{
-    width: 80px;
+    width: 7vh;
     height: 100%;
     background-color: #643b24;
-    padding: 40px 0 40px 1%;
+    padding: 40px 0 40px 0%;
     box-shadow: 3px 0 0 black;
-
     position: fixed;
     top: 0;
     left: 0;
@@ -55,10 +54,12 @@ ul li.item-menu{
 
 ul li.ativo{
     background-color: white;
+    border-top: 3px solid black;
 }
 
 ul li.item-menu:hover{
     background: white;
+    box-shadow: 3px 3px 3px 3px black;
 }
 
 ul li.item-menu a{
@@ -85,4 +86,121 @@ nav.menu-lateral.expandir .txt-link{
 ul li.item-menu a .icon > i{
     font-size: 30px;
     margin-left: 10px;
+}
+
+#box-containerprincipalsystem{
+    display: flex;
+    width: 200.1vh;
+    height: 100%;
+    margin: 0 auto; 
+}
+.box-system{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+    padding: 40px;
+    justify-content: center;
+}
+
+#header{
+    display: flex;
+    width: 200.1vh;
+    height: 7.5vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #643b24;
+    box-shadow: 0 3px 0 black;
+    position: fixed;
+      /*Cabeçalho*/
+}
+
+#logo{
+    width: 3.7vh;
+    margin-left: 12vh;
+    /* Logo do cabeçalho */
+}
+
+.logo.expandir{
+    margin-left: 36vh;
+}
+
+ul li.item-cabecalho a{
+    color: black;
+    line-height: 30px;
+    font-size: 2.2vh;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 1vh;
+}
+
+.embreve{
+    display: flex;
+    font-size: 14vh;
+    margin-top: 300px;
+    justify-content: center;
+}
+
+.box-textinsc{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    /*Estilo box-container do cadastro*/
+}
+
+#inputdata{
+    display: block;
+    height: 45px;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 0px 10px;
+    /*Estilo input do cadastro*/
+}
+.datacad{
+    display: flex;
+    margin-bottom: 3px;
+    flex-direction: row;
+    color: black;
+    align-items: left;
+    padding: 10px;
+    gap: 10px;
+    /*Estilo box-container do cadastro*/
+}
+
+.box-titleinsc{
+    font-size: 30px;
+    font-weight: 500;
+    /*Estilo letras do cadastro*/
+}
+
+label {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.register{
+    height: 100%;
+    background-image: linear-gradient(333.52deg, #643b24 24.58%, white 84.55%, #643b24 104.96%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-start{
+    margin-left: 10px;
+    font-size: 22px;
+    padding: 2px 20px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: #50301E;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

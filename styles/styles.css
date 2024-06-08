@@ -13,7 +13,7 @@ body{
 }
 
 #logo{
-    width: 35px;
+    width: 3.7vh;
     /* Logo do cabeçalho */
 }
 
@@ -38,7 +38,7 @@ body{
     background-size: cover;
     height: 859px;
     padding: 40px;
-    /*Fundo da página login*/
+    /*Fundo da página inscrever*/
 }
 
 #header{
