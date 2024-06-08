@@ -35,7 +35,7 @@ Uma série de exemplos passo-a-passo que informam o que você deve executar para
 1. Clonar o Repositório
 
 ```
-git clone https://github.com/seuprojeto/tolyid.git
+gh repo clone gabrielgjsc/TolyID
 
 cd tolyid
 ```
