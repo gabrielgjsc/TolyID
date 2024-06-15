@@ -110,7 +110,7 @@ class Program
             }
             catch (FormatException)
             {
-                Console.WriteLine("Data inválida. Por favor, digite novamente.");
+                Console.WriteLine("Data inválida. Tente novamente.");
             }
         }
 
@@ -124,7 +124,7 @@ class Program
             }
             catch (FormatException)
             {
-                Console.WriteLine("Hora inválida. Por favor, digite novamente.");
+                Console.WriteLine("Hora inválida. Tente novamente.");
             }
         }
 
@@ -297,7 +297,7 @@ class Program
         Console.Write("Largura na 2ª cinta: ");
         biometria.LarguraSegundaCinta = double.Parse(Console.ReadLine());
 
-        Console.Write("Comprimento do clitóris: ");
+        Console.Write("Comprimento do clitórios: ");
         biometria.ComprimentoClitorios = double.Parse(Console.ReadLine());
 
         Console.Write("Observações: ");
@@ -346,31 +346,30 @@ class Program
         }
 
         // Exibição dos dados de biometria
-        Console.WriteLine("\nDados de Biometria:");
-        Console.WriteLine($"Comprimento total: {biometria.ComprimentoTotal}");
-        Console.WriteLine($"Comprimento de orelha: {biometria.ComprimentoOrelha}");
+        Console.WriteLine("\nBiometria:");
+        Console.WriteLine($"Comprimento total: {biometria.ComprimentoTotal} cm");
+        Console.WriteLine($"Comprimento de orelha: {biometria.ComprimentoOrelha} cm");
         Console.WriteLine($"Número de cintas: {biometria.NumeroCintas}");
-        Console.WriteLine($"Comprimento cabeça: {biometria.ComprimentoCabeca}");
-        Console.WriteLine($"Comprimento cauda: {biometria.ComprimentoCauda}");
-        Console.WriteLine($"Comprimento mão sem unha: {biometria.ComprimentoMaoSemUnha}");
-        Console.WriteLine($"Largura cabeça: {biometria.LarguraCabeca}");
-        Console.WriteLine($"Largura cauda: {biometria.LarguraCauda}");
-        Console.WriteLine($"Comprimento unha da mão: {biometria.ComprimentoUnhaMao}");
+        Console.WriteLine($"Comprimento cabeça: {biometria.ComprimentoCabeca} cm");
+        Console.WriteLine($"Comprimento cauda: {biometria.ComprimentoCauda} cm");
+        Console.WriteLine($"Comprimento mão sem unha: {biometria.ComprimentoMaoSemUnha} cm");
+        Console.WriteLine($"Largura cabeça: {biometria.LarguraCabeca} cm");
+        Console.WriteLine($"Largura cauda: {biometria.LarguraCauda} cm");
+        Console.WriteLine($"Comprimento unha da mão: {biometria.ComprimentoUnhaMao} cm");
         Console.WriteLine($"Padrão escudo cefálico: {biometria.PadraoEscudoCefalico}");
-        Console.WriteLine($"Comprimento escudo escapular: {biometria.ComprimentoEscudoEscapular}");
-        Console.WriteLine($"Comprimento pé sem unha: {biometria.ComprimentoPeSemUnha}");
-        Console.WriteLine($"Comprimento escudo cefálico: {biometria.ComprimentoEscudoCefalico}");
-        Console.WriteLine($"Semicircunferência escudo escapular: {biometria.SemicircunferenciaEscudoEscapular}");
-        Console.WriteLine($"Comprimento unha do pé: {biometria.ComprimentoUnhaPe}");
-        Console.WriteLine($"Largura escudo cefálico: {biometria.LarguraEscudoCefalico}");
-        Console.WriteLine($"Comprimento escudo pélvico: {biometria.ComprimentoEscudoPelvico}");
-        Console.WriteLine($"Comprimento do pênis: {biometria.ComprimentoPenis}");
-        Console.WriteLine($"Largura inter-orbital: {biometria.LarguraInterOrbital}");
-        Console.WriteLine($"Semicircunferência escudo pélvico: {biometria.SemicircunferenciaEscudoPelvico}");
-        Console.WriteLine($"Largura base do pênis: {biometria.LarguraBasePenis}");
-        Console.WriteLine($"Largura inter-lacrimal: {biometria.LarguraInterLacrimal}");
-        Console.WriteLine($"Largura na 2ª cinta: {biometria.LarguraSegundaCinta}");
-        Console.WriteLine($"Comprimento do clitóris: {biometria.ComprimentoClitorios}");
+        Console.WriteLine($"Comprimento escudo escapular: {biometria.ComprimentoEscudoEscapular} cm");
+        Console.WriteLine($"Comprimento pé sem unha: {biometria.ComprimentoPeSemUnha} cm");
+        Console.WriteLine($"Comprimento escudo cefálico: {biometria.ComprimentoEscudoCefalico} cm");
+        Console.WriteLine($"Semicircunferência escudo escapular: {biometria.SemicircunferenciaEscudoEscapular} cm");
+        Console.WriteLine($"Comprimento unha do pé: {biometria.ComprimentoUnhaPe} cm");
+        Console.WriteLine($"Largura escudo cefálico: {biometria.LarguraEscudoCefalico} cm");
+        Console.WriteLine($"Comprimento escudo pélvico: {biometria.ComprimentoEscudoPelvico} cm");
+        Console.WriteLine($"Comprimento do pênis: {biometria.ComprimentoPenis} cm");
+        Console.WriteLine($"Largura inter-orbital: {biometria.LarguraInterOrbital} cm");
+        Console.WriteLine($"Semicircunferência escudo pélvico: {biometria.SemicircunferenciaEscudoPelvico} cm");
+        Console.WriteLine($"Largura base do pênis: {biometria.LarguraBasePenis} cm");
+        Console.WriteLine($"Largura inter-lacrimal: {biometria.LarguraInterLacrimal} cm");
+        Console.WriteLine($"Largura na 2ª cinta: {biometria.LarguraSegundaCinta} cm");
+        Console.WriteLine($"Comprimento do clitórios: {biometria.ComprimentoClitorios} cm");
         Console.WriteLine($"Observações: {biometria.Observacoes}");
-    }
-}
+    }
